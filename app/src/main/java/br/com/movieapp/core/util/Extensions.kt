@@ -1,4 +1,7 @@
 package br.com.movieapp.core.util
 
-class Extensions {
-}
+import br.com.movieapp.BuildConfig
+
+fun String?.toPostUrl() = "${BuildConfig.BASE_URL_IMAGE}$this"
+
+fun String?.toBackdropUrl() = "${BuildConfig.BASE_URL_IMAGE}$this"
