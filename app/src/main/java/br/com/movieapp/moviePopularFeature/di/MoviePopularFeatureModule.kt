@@ -34,5 +34,4 @@ object MoviePopularFeatureModule {
     fun provideGetMoviesPopularUseCase(moviePopularRepository: MoviePopularRepository): GetPopularMoviesUseCase {
         return GetPopularMoviesUseCaseImpl(repository = moviePopularRepository)
     }
-
 }
